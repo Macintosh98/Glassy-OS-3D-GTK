@@ -1,0 +1,175 @@
+/* GTK NAMED COLORS ---------------- use responsibly! */
+@define-color destructive_bg_color @red_3;
+@define-color destructive_fg_color white;
+@define-color success_bg_color @green_4;
+@define-color success_fg_color white;
+@define-color warning_bg_color @yellow_5;
+@define-color warning_fg_color RGB(0 0 0 / 80%);
+@define-color error_bg_color @red_3;
+@define-color error_fg_color white;
+@define-color accent_color oklab(from @accent_bg_color min(l, 0.5) a b);
+@define-color destructive_color oklab(from @destructive_bg_color min(l, 0.5) a b);
+@define-color success_color oklab(from @success_bg_color min(l, 0.5) a b);
+@define-color warning_color oklab(from @warning_bg_color min(l, 0.5) a b);
+@define-color error_color oklab(from @error_bg_color min(l, 0.5) a b);
+@define-color window_bg_color #fafafb;
+@define-color window_fg_color RGB(0 0 6/80%);
+@define-color view_bg_color #ffffff;
+@define-color view_fg_color RGB(0 0 6/80%);
+@define-color headerbar_bg_color #ffffff;
+@define-color headerbar_fg_color RGB(0 0 6/80%);
+@define-color headerbar_border_color RGB(0 0 6/80%);
+@define-color headerbar_backdrop_color @window_bg_color;
+@define-color headerbar_shade_color RGB(0 0 6/12%);
+@define-color headerbar_darker_shade_color RGB(0 0 6/12%);
+@define-color sidebar_bg_color #ebebed;
+@define-color sidebar_fg_color RGB(0 0 6/80%);
+@define-color sidebar_backdrop_color #f2f2f4;
+@define-color sidebar_shade_color RGB(0 0 6/7%);
+@define-color sidebar_border_color RGB(0 0 6/7%);
+@define-color secondary_sidebar_bg_color #f3f3f5;
+@define-color secondary_sidebar_fg_color RGB(0 0 6/80%);
+@define-color secondary_sidebar_backdrop_color #f6f6fa;
+@define-color secondary_sidebar_shade_color RGB(0 0 6/7%);
+@define-color secondary_sidebar_border_color RGB(0 0 6/7%);
+@define-color card_bg_color #ffffff;
+@define-color card_fg_color RGB(0 0 6/80%);
+@define-color card_shade_color RGB(0 0 6/7%);
+@define-color dialog_bg_color #fafafb;
+@define-color dialog_fg_color RGB(0 0 6/80%);
+@define-color popover_bg_color #ffffff;
+@define-color popover_fg_color RGB(0 0 6/80%);
+@define-color popover_shade_color RGB(0 0 6/7%);
+@define-color thumbnail_bg_color #ffffff;
+@define-color thumbnail_fg_color RGB(0 0 6/80%);
+@define-color shade_color RGB(0 0 6/7%);
+@define-color scrollbar_outline_color white;
+:root {
+  --standalone-color-oklab: min(l, 0.5) a b;
+  --accent-color: oklab(
+    from var(--accent-bg-color) var(--standalone-color-oklab)
+  );
+  --destructive-color: oklab(
+    from var(--destructive-bg-color) var(--standalone-color-oklab)
+  );
+  --success-color: oklab(
+    from var(--success-bg-color) var(--standalone-color-oklab)
+  );
+  --warning-color: oklab(
+    from var(--warning-bg-color) var(--standalone-color-oklab)
+  );
+  --error-color: oklab(
+    from var(--error-bg-color) var(--standalone-color-oklab)
+  );
+  --active-toggle-bg-color: #ffffff;
+  --active-toggle-fg-color: rgb(0 0 6 / 80%);
+  --overview-bg-color: #f3f3f5;
+  --overview-fg-color: rgb(0 0 6 / 80%);
+}
+@import "../gtk-3.0/libadwaita.css";
+@import "../gtk-3.0/libadwaita-tweaks.css";
+
+* {
+  border-radius: 20px;
+}
+
+window {
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.maximize window {
+  border-radius: 30px;
+  padding: 10px;
+}
+
+window.maximize {
+  border-radius: 30px;
+  padding: 10px;
+}
+
+:root {
+  /* Blue */
+  --blue-1: #99c1f1;
+  --blue-2: #99c1f1;
+  --blue-3: #99c1f1;
+  --blue-4: #99c1f1;
+  --blue-5: #99c1f1;
+
+  /* Green */
+  --green-1: #8ff0a4;
+  --green-2: #8ff0a4;
+  --green-3: #8ff0a4;
+  --green-4: #8ff0a4;
+  --green-5: #8ff0a4;
+
+  /* Yellow */
+  --yellow-1: #f9f06b;
+  --yellow-2: #f9f06b;
+  --yellow-3: #f9f06b;
+  --yellow-4: #f9f06b;
+  --yellow-5: #f9f06b;
+
+  /* Orange */
+  --orange-1: #ffbe6f;
+  --orange-2: #ffbe6f;
+  --orange-3: #ffbe6f;
+  --orange-4: #ffbe6f;
+  --orange-5: #ffbe6f;
+
+  /* Red */
+  --red-1: #f66151;
+  --red-2: #f66151;
+  --red-3: #f66151;
+  --red-4: #f66151;
+  --red-5: #f66151;
+
+  /* Purple */
+  --purple-1: #dc8add;
+  --purple-2: #dc8add;
+  --purple-3: #dc8add;
+  --purple-4: #dc8add;
+  --purple-5: #dc8add;
+
+  /* Brown */
+  --brown-1: #cdab8f;
+  --brown-2: #cdab8f;
+  --brown-3: #cdab8f;
+  --brown-4: #cdab8f;
+  --brown-5: #cdab8f;
+
+  --accent-blue: #99c1f1;
+  --accent-teal: #78e9ab;
+  --accent-green: #8ff0a4;
+  --accent-yellow: #f9f06b;
+  --accent-orange: #ffbe6f;
+  --accent-red: #f66151;
+  --accent-pink: #ff938c;
+  --accent-purple: #dc8add;
+  --accent-slate: #cdab8f;
+}
+.sidebar-pane {
+  margin: 6px;
+  margin-right: 0px;
+  box-shadow: 0px 0px 4px #eee;
+}
+.content-pane headerbar {
+  margin-top: 6px;
+}
+/* glassy */
+.sidebar-pane{
+   background-color:transparent;
+box-shadow: none;
+}
+ button,scrolledwindow , .title {
+   background-color:rgba(163,144,124,0.5);
+margin:5px;
+box-shadow: 0 0 4px #00000050;
+ 
+}
+
+window {
+  background-color:#00000000;
+ box-shadow: none;
+outline:none;
+}
