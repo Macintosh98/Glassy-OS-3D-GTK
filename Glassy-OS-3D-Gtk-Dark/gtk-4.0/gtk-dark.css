@@ -76,6 +76,7 @@
 window {
   border-radius: 30px;
   padding: 10px;
+  backdrop-filter: blur(10px);
 }
 
 .maximize window {
@@ -152,25 +153,25 @@ window.maximize {
 .sidebar-pane {
   margin: 6px;
   margin-right: 0px;
-
 }
 .content-pane headerbar {
   margin-top: 6px;
 }
 /* glassy */
-.sidebar-pane{
-   background-color:transparent;
-box-shadow: none;
+.sidebar-pane {
+  background-color: transparent;
+  box-shadow: none;
 }
- button,scrolledwindow , .title {
-   background-color:#999999;
-margin:5px;
-box-shadow: 0 0 4px #00000050;
- 
+button,
+scrolledwindow,
+.title {
+  background-color: #999999;
+  margin: 5px;
+  box-shadow: 0 0 4px #00000050;
 }
 
 window {
-  background-color:#00000000;
- box-shadow: none;
-outline:none;
+  background-color: #00000000;
+  box-shadow: none;
+  outline: none;
 }

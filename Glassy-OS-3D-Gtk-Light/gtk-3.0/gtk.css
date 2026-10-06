@@ -1785,7 +1785,9 @@ modelbutton.flat,
   background-color: transparent;
   background-image: none;
   border-color: transparent;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0);
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0),
+    0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
@@ -2883,7 +2885,8 @@ window.csd > .titlebar:not(headerbar) {
 }
 
 window.devel headerbar.titlebar:not(.selection-mode) {
-  background: @window_bg_color
+  background:
+    @window_bg_color
       cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent))
       90% 0/256px 256px no-repeat,
     linear-gradient(to right, transparent 65%, alpha(@accent_bg_color, 0.2)),
@@ -2896,7 +2899,8 @@ window.devel headerbar.titlebar:not(.selection-mode) {
 }
 
 window.devel headerbar.titlebar:not(.selection-mode):backdrop {
-  background: @headerbar_backdrop_color
+  background:
+    @headerbar_backdrop_color
       cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent))
       90% 0/256px 256px no-repeat,
     image(@headerbar_backdrop_color);
@@ -3324,7 +3328,8 @@ menuitem radio:dir(rtl) {
 popover.background {
   padding: 2px;
   background-color: @popover_bg_color;
-  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.09),
+  box-shadow:
+    0 1px 5px 1px rgba(0, 0, 0, 0.09),
     0 2px 8px 3px rgba(0, 0, 0, 0.05);
 }
 
@@ -5382,7 +5387,8 @@ scrolledwindow viewport.frame {
 }
 
 scrolledwindow overshoot.top {
-  background-image: -gtk-gradient(
+  background-image:
+    -gtk-gradient(
       radial,
       center top,
       0,
@@ -5391,8 +5397,18 @@ scrolledwindow overshoot.top {
       to(shade(mix(currentColor, @window_bg_color, 0.853), 0.9)),
       to(alpha(shade(mix(currentColor, @window_bg_color, 0.853), 0.9), 0))
     ),
-    -gtk-gradient(radial, center top, 0, center top, 0.6, from(alpha(@window_fg_color, 0.07)), to(alpha(@window_fg_color, 0)));
-  background-size: 100% 5%, 100% 100%;
+    -gtk-gradient(
+        radial,
+        center top,
+        0,
+        center top,
+        0.6,
+        from(alpha(@window_fg_color, 0.07)),
+        to(alpha(@window_fg_color, 0))
+      );
+  background-size:
+    100% 5%,
+    100% 100%;
   background-repeat: no-repeat;
   background-position: center top;
   background-color: transparent;
@@ -5419,7 +5435,8 @@ scrolledwindow overshoot.top:backdrop {
 }
 
 scrolledwindow overshoot.bottom {
-  background-image: -gtk-gradient(
+  background-image:
+    -gtk-gradient(
       radial,
       center bottom,
       0,
@@ -5428,8 +5445,18 @@ scrolledwindow overshoot.bottom {
       to(shade(mix(currentColor, @window_bg_color, 0.853), 0.9)),
       to(alpha(shade(mix(currentColor, @window_bg_color, 0.853), 0.9), 0))
     ),
-    -gtk-gradient(radial, center bottom, 0, center bottom, 0.6, from(alpha(@window_fg_color, 0.07)), to(alpha(@window_fg_color, 0)));
-  background-size: 100% 5%, 100% 100%;
+    -gtk-gradient(
+        radial,
+        center bottom,
+        0,
+        center bottom,
+        0.6,
+        from(alpha(@window_fg_color, 0.07)),
+        to(alpha(@window_fg_color, 0))
+      );
+  background-size:
+    100% 5%,
+    100% 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-color: transparent;
@@ -5456,7 +5483,8 @@ scrolledwindow overshoot.bottom:backdrop {
 }
 
 scrolledwindow overshoot.left {
-  background-image: -gtk-gradient(
+  background-image:
+    -gtk-gradient(
       radial,
       left center,
       0,
@@ -5465,8 +5493,18 @@ scrolledwindow overshoot.left {
       to(shade(mix(currentColor, @window_bg_color, 0.853), 0.9)),
       to(alpha(shade(mix(currentColor, @window_bg_color, 0.853), 0.9), 0))
     ),
-    -gtk-gradient(radial, left center, 0, left center, 0.6, from(alpha(@window_fg_color, 0.07)), to(alpha(@window_fg_color, 0)));
-  background-size: 5% 100%, 100% 100%;
+    -gtk-gradient(
+        radial,
+        left center,
+        0,
+        left center,
+        0.6,
+        from(alpha(@window_fg_color, 0.07)),
+        to(alpha(@window_fg_color, 0))
+      );
+  background-size:
+    5% 100%,
+    100% 100%;
   background-repeat: no-repeat;
   background-position: left center;
   background-color: transparent;
@@ -5493,7 +5531,8 @@ scrolledwindow overshoot.left:backdrop {
 }
 
 scrolledwindow overshoot.right {
-  background-image: -gtk-gradient(
+  background-image:
+    -gtk-gradient(
       radial,
       right center,
       0,
@@ -5502,8 +5541,18 @@ scrolledwindow overshoot.right {
       to(shade(mix(currentColor, @window_bg_color, 0.853), 0.9)),
       to(alpha(shade(mix(currentColor, @window_bg_color, 0.853), 0.9), 0))
     ),
-    -gtk-gradient(radial, right center, 0, right center, 0.6, from(alpha(@window_fg_color, 0.07)), to(alpha(@window_fg_color, 0)));
-  background-size: 5% 100%, 100% 100%;
+    -gtk-gradient(
+        radial,
+        right center,
+        0,
+        right center,
+        0.6,
+        from(alpha(@window_fg_color, 0.07)),
+        to(alpha(@window_fg_color, 0))
+      );
+  background-size:
+    5% 100%,
+    100% 100%;
   background-repeat: no-repeat;
   background-position: right center;
   background-color: transparent;
@@ -5867,7 +5916,9 @@ stacksidebar row > label {
 }
 
 stacksidebar row.needs-attention > label {
-  background-size: 6px 6px, 0 0;
+  background-size:
+    6px 6px,
+    0 0;
 }
 
 separator.sidebar {
@@ -5968,7 +6019,9 @@ placessidebar row.sidebar-new-bookmark-row {
 
 placessidebar row:drop(active):not(:disabled) {
   color: @accent_bg_color;
-  box-shadow: inset 0 1px @accent_bg_color, inset 0 -1px @accent_bg_color;
+  box-shadow:
+    inset 0 1px @accent_bg_color,
+    inset 0 -1px @accent_bg_color;
 }
 
 placessidebar row:drop(active):not(:disabled):selected {
@@ -6017,14 +6070,18 @@ paned > separator.wide {
   min-width: 5px;
   min-height: 5px;
   background-color: @window_bg_color;
-  background-image: image(mix(currentColor, @window_bg_color, 0.853)),
+  background-image:
+    image(mix(currentColor, @window_bg_color, 0.853)),
     image(mix(currentColor, @window_bg_color, 0.853));
-  background-size: 1px 1px, 1px 1px;
+  background-size:
+    1px 1px,
+    1px 1px;
 }
 
 paned > separator.wide:backdrop {
   background-color: @window_bg_color;
-  background-image: image(mix(currentColor, @window_bg_color, 0.81)),
+  background-image:
+    image(mix(currentColor, @window_bg_color, 0.81)),
     image(mix(currentColor, @window_bg_color, 0.81));
 }
 
@@ -6362,13 +6419,15 @@ colorswatch:drop(active) {
 
 colorswatch:drop(active).light overlay {
   border-color: @accent_bg_color;
-  box-shadow: inset 0 0 0 2px shade(@accent_bg_color, 0.93),
+  box-shadow:
+    inset 0 0 0 2px shade(@accent_bg_color, 0.93),
     inset 0 0 0 1px @accent_bg_color;
 }
 
 colorswatch:drop(active).dark overlay {
   border-color: @accent_bg_color;
-  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3),
+  box-shadow:
+    inset 0 0 0 2px rgba(0, 0, 0, 0.3),
     inset 0 0 0 1px @accent_bg_color;
 }
 
@@ -6377,7 +6436,8 @@ colorswatch overlay {
 }
 
 colorswatch overlay:hover {
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4),
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.4),
     inset 0 -1px rgba(0, 0, 0, 0.2);
 }
 
@@ -6447,12 +6507,16 @@ colorchooser .popover.osd {
 decoration {
   border-radius: 15px 15px 0 0;
   border-width: 0px;
-  box-shadow: 0 3px 12px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 3px 12px 1px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
   margin: 10px;
 }
 
 decoration:backdrop {
-  box-shadow: 0 3px 12px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.14),
+  box-shadow:
+    0 3px 12px 1px transparent,
+    0 2px 6px 2px rgba(0, 0, 0, 0.14),
     0 0 0 1px rgba(0, 0, 0, 0.02);
   transition: 200ms ease-out;
 }
@@ -6469,7 +6533,9 @@ decoration:backdrop {
 .tiled-bottom decoration,
 .tiled-left decoration {
   border-radius: 0;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 0 0 20px transparent;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05),
+    0 0 0 20px transparent;
 }
 
 .tiled decoration:backdrop,
@@ -6477,7 +6543,9 @@ decoration:backdrop {
 .tiled-right decoration:backdrop,
 .tiled-bottom decoration:backdrop,
 .tiled-left decoration:backdrop {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 0 0 20px transparent;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.02),
+    0 0 0 20px transparent;
 }
 
 .popup decoration {
@@ -6499,7 +6567,8 @@ decoration:backdrop {
 
 .csd.popup decoration {
   border-radius: 9px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2),
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.2),
     0 0 0 1px alpha(rgba(0, 0, 0, 0.05), 0.9);
 }
 
@@ -6510,7 +6579,8 @@ tooltip.csd decoration {
 
 messagedialog.csd decoration {
   border-radius: 15px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2),
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.2),
     0 0 0 1px alpha(rgba(0, 0, 0, 0.05), 0.9);
 }
 
@@ -6520,7 +6590,8 @@ messagedialog.csd decoration {
   background-color: mix(currentColor, @window_bg_color, 0.853);
   border: solid 1px mix(currentColor, @window_bg_color, 0.853);
   border-radius: 0;
-  box-shadow: inset 0 0 0 5px mix(currentColor, @window_bg_color, 0.853),
+  box-shadow:
+    inset 0 0 0 5px mix(currentColor, @window_bg_color, 0.853),
     inset 0 0 0 4px @headerbar_bg_color,
     inset 0 0 0 1px mix(currentColor, @window_bg_color, 0.853);
 }
@@ -6723,13 +6794,19 @@ stackswitcher button.text-button.circular {
 }
 
 .lowres-icon {
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.05), 1px 0 rgba(0, 0, 0, 0.1),
-    0 1px rgba(0, 0, 0, 0.3), -1px 0 rgba(0, 0, 0, 0.1);
+  -gtk-icon-shadow:
+    0 -1px rgba(0, 0, 0, 0.05),
+    1px 0 rgba(0, 0, 0, 0.1),
+    0 1px rgba(0, 0, 0, 0.3),
+    -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .icon-dropshadow {
-  -gtk-icon-shadow: 0 1px 12px rgba(0, 0, 0, 0.05), 0 -1px rgba(0, 0, 0, 0.05),
-    1px 0 rgba(0, 0, 0, 0.1), 0 1px rgba(0, 0, 0, 0.3),
+  -gtk-icon-shadow:
+    0 1px 12px rgba(0, 0, 0, 0.05),
+    0 -1px rgba(0, 0, 0, 0.05),
+    1px 0 rgba(0, 0, 0, 0.1),
+    0 1px rgba(0, 0, 0, 0.3),
     -1px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -6855,9 +6932,12 @@ popover.emoji-completion .emoji:hover {
 @define-color content_view_bg @view_bg_color;
 @define-color text_view_bg @view_bg_color;
 .checkerboard {
-  background-position: 0px 0px, 10px 10px;
+  background-position:
+    0px 0px,
+    10px 10px;
   background-size: 20px 20px;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       mix(currentColor, @window_bg_color, 0.853) 25%,
       transparent 25%,
@@ -8635,8 +8715,9 @@ headerbar switch:disabled:backdrop,
 headerbar:not(:backdrop),
 .titlebar:not(:backdrop) {
   transition: 50ms ease-in;
-  transition-property: background-color, background-image, box-shadow,
-    border-color, color, text-shadow;
+  transition-property:
+    background-color, background-image, box-shadow, border-color, color,
+    text-shadow;
 }
 
 headerbar .right,
@@ -9433,17 +9514,25 @@ viewswitcher button.needs-attention > stack > box label {
     to(@accent_bg_color),
     to(transparent)
   );
-  background-size: 6px 6px, 6px 6px;
+  background-size:
+    6px 6px,
+    6px 6px;
   background-repeat: no-repeat;
-  background-position: right 0px, right 1px;
+  background-position:
+    right 0px,
+    right 1px;
 }
 
 viewswitcher button.needs-attention > stack > box label:backdrop {
-  background-size: 6px 6px, 0 0;
+  background-size:
+    6px 6px,
+    0 0;
 }
 
 viewswitcher button.needs-attention > stack > box label:dir(rtl) {
-  background-position: left 0px, left 1px;
+  background-position:
+    left 0px,
+    left 1px;
 }
 
 viewswitcherbar actionbar > revealer > box {
@@ -9661,7 +9750,9 @@ tabbar .end-action:dir(ltr) > * {
 .tab-drag-icon tab {
   min-height: 26px;
   background-color: mix(currentColor, @window_bg_color, 0.923);
-  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.23),
+  box-shadow:
+    0 3px 9px 1px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(0, 0, 0, 0.23),
     inset 0 1px alpha(white, 0.5);
   margin: 25px;
 }
@@ -9735,7 +9826,8 @@ leaflet > shadow {
 flap > shadow.left,
 deck > shadow.left,
 leaflet > shadow.left {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.01) 40px,
@@ -9752,7 +9844,8 @@ leaflet > shadow.left {
 flap > shadow.right,
 deck > shadow.right,
 leaflet > shadow.right {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to left,
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.01) 40px,
@@ -9769,7 +9862,8 @@ leaflet > shadow.right {
 flap > shadow.up,
 deck > shadow.up,
 leaflet > shadow.up {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.01) 40px,
@@ -9786,7 +9880,8 @@ leaflet > shadow.up {
 flap > shadow.down,
 deck > shadow.down,
 leaflet > shadow.down {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.01) 40px,
@@ -10006,7 +10101,9 @@ list .h4 {
   border: none;
   border-radius: 9px 9px 0 0;
   background-image: none;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.03),
+    0 1px 3px 1px rgba(0, 0, 0, 0.07),
     0 2px 6px 2px rgba(0, 0, 0, 0.03);
 }
 
@@ -10127,8 +10224,10 @@ list .h4 {
 .storage-bar .swap,
 .storage-bar .unused {
   border: none;
-  box-shadow: inset 0 -2px rgba(94, 92, 100, 0.5),
-    inset 1px 0 rgba(94, 92, 100, 0.5), inset -1px 0 rgba(94, 92, 100, 0.5);
+  box-shadow:
+    inset 0 -2px rgba(94, 92, 100, 0.5),
+    inset 1px 0 rgba(94, 92, 100, 0.5),
+    inset -1px 0 rgba(94, 92, 100, 0.5);
 }
 
 .storage-bar .swap {
@@ -10285,7 +10384,9 @@ paper,
   transition: all 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
   border: none;
   background-color: @view_bg_color;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 1px 3px 1px rgba(0, 0, 0, 0.07),
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.03),
+    0 1px 3px 1px rgba(0, 0, 0, 0.07),
     0 2px 6px 2px rgba(0, 0, 0, 0.03);
 }
 
@@ -10488,8 +10589,8 @@ button.back-button.text-button:dir(rtl) {
 }
 
 .checkerboard {
-  box-shadow: 0px 1px 2px 0px
-      alpha(mix(currentColor, @window_bg_color, 0.853), 0.5),
+  box-shadow:
+    0px 1px 2px 0px alpha(mix(currentColor, @window_bg_color, 0.853), 0.5),
     0px 0px 0px 1px alpha(mix(currentColor, @window_bg_color, 0.853), 0.5),
     0px 2px 0px 0px alpha(mix(currentColor, @window_bg_color, 0.853), 0.5);
   border-radius: 2px;
@@ -11154,6 +11255,7 @@ geary-conversation-viewer#conversation_viewer searchbar > revealer > box {
 window {
   border-radius: 30px;
   padding: 10px;
+  backdrop-filter: blur(10px);
 }
 
 .maximize window {
@@ -11235,19 +11337,20 @@ window.maximize {
   margin-top: 6px;
 }
 /* glassy */
-.sidebar-pane{
-   background-color:transparent;
-box-shadow: none;
+.sidebar-pane {
+  background-color: transparent;
+  box-shadow: none;
 }
- button,scrolledwindow , .title {
-   background-color:#999999;
-margin:5px;
-box-shadow: 0 0 4px #00000050;
- 
+button,
+scrolledwindow,
+.title {
+  background-color: #999999;
+  margin: 5px;
+  box-shadow: 0 0 4px #00000050;
 }
 
 window {
-  background-color:#00000000;
- box-shadow: none;
-outline:none;
+  background-color: #00000000;
+  box-shadow: none;
+  outline: none;
 }
